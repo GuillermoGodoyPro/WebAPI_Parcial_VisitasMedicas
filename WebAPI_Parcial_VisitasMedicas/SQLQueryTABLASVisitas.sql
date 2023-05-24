@@ -1,0 +1,3 @@
+INSERT INTO dbo.Ambulancias(Id, Empresa, Codigo, ObraSocial, Afiliado, DNI, Precio) VALUES (1,'Vittal', 'Rojo', 'OSDE','Juan Perez', 35055290, 50000);
+INSERT INTO dbo.Ambulancias(Id, Empresa, Codigo, ObraSocial, Afiliado, DNI, Precio) VALUES (2,'Acudir', 'Amarillo', 'OSPAÑA','Rogelio Aguas', 23650667, 32500);
+INSERT INTO dbo.Ambulancias(Id, Empresa, Codigo, ObraSocial, Afiliado, DNI, Precio) VALUES (3,'Pasteur', 'Verde', 'Galeno', 'Pedro Rojas', 3161566, 15000);
