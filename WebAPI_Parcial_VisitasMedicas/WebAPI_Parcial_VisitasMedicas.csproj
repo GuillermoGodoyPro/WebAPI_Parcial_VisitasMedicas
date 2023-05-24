@@ -7,6 +7,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20230524014136_CreacionBD.cs" />
     <Compile Remove="Migrations\20230524014136_CreacionBD.Designer.cs" />
+    <Compile Remove="Migrations\20230524040510_upTables.cs" />
+    <Compile Remove="Migrations\20230524040510_upTables.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,10 +20,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Migrations\" />
   </ItemGroup>
 
 
