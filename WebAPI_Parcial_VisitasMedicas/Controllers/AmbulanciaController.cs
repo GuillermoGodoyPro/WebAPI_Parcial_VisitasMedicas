@@ -64,19 +64,19 @@ namespace WebAPI_Parcial_VisitasMedicas.Controllers
         [HttpDelete("{id}")]
         public ActionResult<Ambulancia> Delete(int id)
         {
-            var autorDeleted = (from d in _context.Ambulancias
+            var ambDeleted = (from d in _context.Ambulancias
                                 where d.Id == id
                                 select d).SingleOrDefault();
 
-            if (autorDeleted == null)
+            if (ambDeleted == null)
             {
                 return NotFound();
             }
 
-            _context.Ambulancias.Remove(autorDeleted);
+            _context.Ambulancias.Remove(ambDeleted);
             _context.SaveChanges();
 
-            return autorDeleted;
+            return ambDeleted;
             
         }
     }
