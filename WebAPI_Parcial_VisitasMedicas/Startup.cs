@@ -47,6 +47,14 @@ namespace WebAPI_Parcial_VisitasMedicas
 
             app.UseRouting();
 
+            // Habilitar CORS
+            app.UseCors(options =>
+            {
+                options.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            });
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
